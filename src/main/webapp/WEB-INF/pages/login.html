@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="_csrf" content="${_csrf.token}"/>
+ <!-- default header name is X-CSRF-TOKEN -->
+<meta name="_csrf_header" content="${_csrf.headerName}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+ 
+ 
+ <form method="POST"  action="login">
+     Hi, everybody Login !!!
+    TEXT: <input type="text" id="username" name="username"/>
+    PASS: <input type="password" id="password" name="password"/>
+    URL: <input type="text" id="openAMURL" name="openAMURL">
+<!--     <input type="hidden" -->
+<!--     name="${_csrf.parameterName}" -->
+<!--     value="${_csrf.token}"/> -->
+    <input type="submit" value="LOGIN TEST" />
+ </form>
+
+</body>
+</html>
